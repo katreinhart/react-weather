@@ -3,7 +3,7 @@ var React=require('react');
 var About = (props) => {
   return(
     <div>
-      <h1 className='text-center'>About</h1>
+      <h1 className='text-center page-title'>About</h1>
       <p>This is just a simple weather app that I built in the React Develper Course. Here are some of the resources I used to build it:</p>
       <ul>
         <li><a href="https://facebook.github.io/react">React </a> - this was the Javascript framework.</li>
