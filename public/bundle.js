@@ -25096,7 +25096,7 @@
 	      if (isLoading) {
 	        return React.createElement(
 	          'h3',
-	          null,
+	          { className: 'text-center' },
 	          'Fetching weather...'
 	        );
 	      } else if (temp && location) {
@@ -25107,11 +25107,6 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement(
-	        'h3',
-	        null,
-	        'Weather Component'
-	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
 	    );
@@ -25145,14 +25140,14 @@
 	      'form',
 	      { onSubmit: this.onFormSubmit },
 	      React.createElement(
-	        'h3',
-	        null,
-	        'Weather Form'
+	        'h1',
+	        { className: 'text-center' },
+	        'Get Weather'
 	      ),
 	      React.createElement('input', { type: 'text', ref: 'location', 'default': 'enter location' }),
 	      React.createElement(
 	        'button',
-	        null,
+	        { type: 'submit', className: 'hollow button expanded' },
 	        'Submit'
 	      )
 	    );
@@ -25165,7 +25160,7 @@
 /* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
@@ -25174,14 +25169,14 @@
 	      location = _ref.location;
 
 	  return React.createElement(
-	    'div',
-	    null,
+	    "div",
+	    { className: "text-center" },
 	    React.createElement(
-	      'p',
+	      "p",
 	      null,
-	      'It\'s ',
+	      "It's ",
 	      temp,
-	      ' degrees in ',
+	      " degrees in ",
 	      location
 	    )
 	  );
@@ -26720,50 +26715,46 @@
 	var About = function About(props) {
 	  return React.createElement(
 	    'div',
-	    { className: 'row' },
+	    null,
 	    React.createElement(
-	      'div',
-	      { className: 'columns medium-8 large-8 small-centered' },
+	      'h1',
+	      { className: 'text-center' },
+	      'About'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'This is just a simple weather app that I built in the React Develper Course. Here are some of the resources I used to build it:'
+	    ),
+	    React.createElement(
+	      'ul',
+	      null,
 	      React.createElement(
-	        'h1',
-	        { className: 'text-center' },
-	        'About'
+	        'li',
+	        null,
+	        React.createElement(
+	          'a',
+	          { href: 'https://facebook.github.io/react' },
+	          'React '
+	        ),
+	        ' - this was the Javascript framework.'
 	      ),
 	      React.createElement(
-	        'p',
+	        'li',
 	        null,
-	        'This is just a simple weather app that I built in the React Develper Course. Here are some of the resources I used to build it:'
+	        React.createElement(
+	          'a',
+	          { href: 'http://foundation.zurb.com/' },
+	          'Styled with Foundation'
+	        )
 	      ),
 	      React.createElement(
-	        'ul',
+	        'li',
 	        null,
 	        React.createElement(
-	          'li',
-	          null,
-	          React.createElement(
-	            'a',
-	            { href: 'https://facebook.github.io/react' },
-	            'React '
-	          ),
-	          ' - this was the Javascript framework.'
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          React.createElement(
-	            'a',
-	            { href: 'http://foundation.zurb.com/' },
-	            'Styled with Foundation'
-	          )
-	        ),
-	        React.createElement(
-	          'li',
-	          null,
-	          React.createElement(
-	            'a',
-	            { href: 'https://www.udemy.com/the-complete-react-web-app-developer-course/' },
-	            'Udemy Complete React Developer Course'
-	          )
+	          'a',
+	          { href: 'https://www.udemy.com/the-complete-react-web-app-developer-course/' },
+	          'Udemy Complete React Developer Course'
 	        )
 	      )
 	    )
