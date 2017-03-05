@@ -11,10 +11,11 @@ var ErrorModal = React.createClass({
     modal.open();
   },
   render: function(){
+    var errorMessage = this.props.errorMessage;
     return(
       <div id="error-modal" className="reveal tiny text-center" data-reveal="">
-        <h4 className="text-center">Some Title</h4>
-        <p>Our Error Message! OOPS!</p>
+        <h4 className="text-center">City not found</h4>
+        <p>{errorMessage}</p>
         <p>
           <button className="button hollow" data-close="">Okay.</button>
         </p>
