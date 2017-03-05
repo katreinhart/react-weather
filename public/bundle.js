@@ -26717,9 +26717,6 @@
 
 	var React = __webpack_require__(8);
 
-	var _require = __webpack_require__(166),
-	    Link = _require.Link;
-
 	var About = function About(props) {
 	  return React.createElement(
 	    'div',
@@ -26744,8 +26741,8 @@
 	          'li',
 	          null,
 	          React.createElement(
-	            Link,
-	            { to: 'https://facebook.github.io/react' },
+	            'a',
+	            { href: 'https://facebook.github.io/react' },
 	            'React '
 	          ),
 	          ' - this was the Javascript framework.'
@@ -26754,8 +26751,8 @@
 	          'li',
 	          null,
 	          React.createElement(
-	            Link,
-	            { to: 'http://foundation.zurb.com/' },
+	            'a',
+	            { href: 'http://foundation.zurb.com/' },
 	            'Styled with Foundation'
 	          )
 	        ),
@@ -26763,8 +26760,8 @@
 	          'li',
 	          null,
 	          React.createElement(
-	            Link,
-	            { to: 'https://www.udemy.com/the-complete-react-web-app-developer-course/' },
+	            'a',
+	            { href: 'https://www.udemy.com/the-complete-react-web-app-developer-course/' },
 	            'Udemy Complete React Developer Course'
 	          )
 	        )
