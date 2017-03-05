@@ -26717,19 +26717,58 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(166),
+	    Link = _require.Link;
+
 	var About = function About(props) {
 	  return React.createElement(
 	    'div',
-	    null,
+	    { className: 'row' },
 	    React.createElement(
-	      'h3',
-	      null,
-	      'About'
-	    ),
-	    React.createElement(
-	      'p',
-	      null,
-	      'Just a simple weather app. '
+	      'div',
+	      { className: 'columns medium-8 large-8 small-centered' },
+	      React.createElement(
+	        'h1',
+	        { className: 'text-center' },
+	        'About'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        'This is just a simple weather app that I built in the React Develper Course. Here are some of the resources I used to build it:'
+	      ),
+	      React.createElement(
+	        'ul',
+	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: 'https://facebook.github.io/react' },
+	            'React '
+	          ),
+	          ' - this was the Javascript framework.'
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: 'http://foundation.zurb.com/' },
+	            'Styled with Foundation'
+	          )
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: 'https://www.udemy.com/the-complete-react-web-app-developer-course/' },
+	            'Udemy Complete React Developer Course'
+	          )
+	        )
+	      )
 	    )
 	  );
 	};
