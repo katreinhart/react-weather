@@ -25210,6 +25210,11 @@
 	var ErrorModal = React.createClass({
 	  displayName: 'ErrorModal',
 
+	  getDefaultProps: function getDefaultProps() {
+	    return {
+	      title: 'Error'
+	    };
+	  },
 	  componentDidMount: function componentDidMount() {
 	    var modal = new Foundation.Reveal($('#error-modal'));
 	    modal.open();
@@ -25217,7 +25222,7 @@
 	  render: function render() {
 	    return React.createElement(
 	      'div',
-	      { id: 'error-modal', className: 'reveal tiny text-center', 'data-reveal': true },
+	      { id: 'error-modal', className: 'reveal tiny text-center', 'data-reveal': '' },
 	      React.createElement(
 	        'h4',
 	        { className: 'text-center' },
@@ -25233,7 +25238,7 @@
 	        null,
 	        React.createElement(
 	          'button',
-	          { className: 'button hollow', 'data-close': true },
+	          { className: 'button hollow', 'data-close': '' },
 	          'Okay.'
 	        )
 	      )
