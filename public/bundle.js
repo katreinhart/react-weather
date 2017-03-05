@@ -26582,9 +26582,18 @@
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'h5',
+	    'div',
 	    null,
-	    'About'
+	    React.createElement(
+	      'h3',
+	      null,
+	      'About'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Just a simple weather app. '
+	    )
 	  );
 	};
 
